@@ -1,0 +1,169 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dahe0070.thirty.PlayFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imageDie1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        app:srcCompat="@drawable/die1" />
+
+    <ImageView
+        android:id="@+id/imageDie2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageDie1"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_toEndOf="@+id/imageDie1"
+        android:layout_toRightOf="@+id/imageDie1"
+        app:srcCompat="@drawable/die2" />
+
+    <ImageView
+        android:id="@+id/imageDie3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/die3"
+        android:layout_below="@+id/imageDie1"
+        android:layout_alignLeft="@+id/imageDie1"
+        android:layout_alignStart="@+id/imageDie1"
+        android:layout_marginTop="27dp" />
+
+    <ImageView
+        android:id="@+id/imageDie4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageDie2"
+        android:layout_alignStart="@+id/imageDie2"
+        android:layout_alignTop="@+id/imageDie3"
+        app:srcCompat="@drawable/die4" />
+
+    <ImageView
+        android:id="@+id/imageDie5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageDie3"
+        android:layout_alignStart="@+id/imageDie3"
+        android:layout_below="@+id/imageDie3"
+        android:layout_marginTop="24dp"
+        app:srcCompat="@drawable/die5" />
+
+    <ImageView
+        android:id="@+id/imageDie6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/die6"
+        android:layout_alignTop="@+id/imageDie5"
+        android:layout_alignLeft="@+id/imageDie4"
+        android:layout_alignStart="@+id/imageDie4" />
+
+
+
+    <TextView
+        android:id="@+id/tvTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageDie2"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_toEndOf="@+id/imageDie2"
+        android:layout_toRightOf="@+id/imageDie2"
+        android:text="@string/turn" />
+
+    <TextView
+        android:id="@+id/tvThrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvTurn"
+        android:layout_alignStart="@+id/tvTurn"
+        android:layout_alignTop="@+id/imageDie4"
+        android:text="@string/throwNr" />
+
+    <TextView
+        android:id="@+id/txtTurn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvTurn"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
+        android:layout_toEndOf="@+id/tvTurn"
+        android:layout_toRightOf="@+id/tvTurn"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/txtThrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/txtTurn"
+        android:layout_alignRight="@+id/txtTurn"
+        android:layout_alignTop="@+id/tvThrow"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/btnScore"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnThrow"
+        android:layout_alignLeft="@+id/tvThrow"
+        android:layout_alignStart="@+id/tvThrow"
+        android:backgroundTint="@color/colorAzure"
+        android:text="@string/count_score" />
+
+    <Button
+        android:id="@+id/btnThrow"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageDie5"
+        android:layout_alignStart="@+id/imageDie5"
+        android:layout_below="@+id/imageDie5"
+        android:layout_marginTop="120dp"
+        android:backgroundTint="@color/colorAzure"
+        android:text="Roll Dice" />
+
+    <TextView
+        android:id="@+id/tvTurnMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" / 10"
+        android:layout_alignBaseline="@+id/txtTurn"
+        android:layout_alignBottom="@+id/txtTurn"
+        android:layout_toRightOf="@+id/txtTurn"
+        android:layout_toEndOf="@+id/txtTurn"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp" />
+
+    <TextView
+        android:id="@+id/tvThrowMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" / 3"
+        android:layout_alignBaseline="@+id/txtThrow"
+        android:layout_alignBottom="@+id/txtThrow"
+        android:layout_alignLeft="@+id/tvTurnMax"
+        android:layout_alignStart="@+id/tvTurnMax" />
+
+    <TextView
+        android:id="@+id/txtCurrPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnThrow"
+        android:layout_alignStart="@+id/btnThrow"
+        android:layout_below="@+id/btnThrow"
+        android:layout_marginTop="37dp"
+        android:text="Roll dice to start!"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

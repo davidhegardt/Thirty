@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Thirty</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_score">ScoreActivity</string>
+    <string-array name="scoring_array">
+        <item>Select combination</item>
+        <item>All combinations of 4</item>
+        <item>All combinations of 5</item>
+        <item>All combinations of 6</item>
+        <item>All combinations of 7</item>
+        <item>All combinations of 8</item>
+        <item>All combinations of 9</item>
+        <item>All combinations of 10</item>
+        <item>All combinations of 11</item>
+        <item>All combinations of 12</item>
+    </string-array>
+    <string name="title_activity_result">Result Activity</string>
+    <string name="about_game">"30 is a dice game played with 6 dice over 10 turns. Each of the player's first 10 turn consists of rolling the dice up to 3 times in hope of making either Low (dice with face value of 3 or less) or combinations totalling 4-12 values.</string>
+    <string name="help_text">Start by choosing a combination which you want to use. Select the dice / dices that adds upp to this combination. If a combination adds upp, the dice will disappear. If only one dice adds up to the combination, just add this die. After the die / dices are choose, press the + sign to add them to the final result. If a combination does not add upp, an error will be shown. Only 1 combination can be used for each round</string>
+    <string name="title_activity_start_screen">StartScreenActivity</string>
+    <string name="player_one">PlayerOne</string>
+    <string name="player_two">PlayerTwo</string>
+    <string name="PlayerNr">PlayerNr</string>
+    <string name="Rules">Rules</string>
+    <string name="CurrPlayer">CurrPlayer</string>
+    <string name="ResRules">ResRules</string>
+    <string name="About">About</string>
+    <string name="PlayerName">PlayerName</string>
+    <string name="Player1Map">Player1Map</string>
+    <string name="multiplayer">multiplayer</string>
+    <string name="PlayerOneTurn">PlayerOneTurn</string>
+    <string name="Player2Map">Player2Map</string>
+    <string name="PlayerTwoTurn">PlayerTwoTurn</string>
+    <string name="finish_game_error">Finish the game first!</string>
+    <string name="playfragment">playfragment</string>
+    <string name="turnNR">turnNR</string>
+    <string name="Result_table">Result Table</string>
+    <string name="game_done">The Game is Done!</string>
+    <string name="winner_is">The Winner is</string>
+    <string name="tied_match">Tied Match!</string>
+    <string name="both_tied">Both players are tied!</string>
+    <string name="is_leading">is leading!</string>
+    <string name="title_count_score">Count Score</string>
+    <string name="Help">Help</string>
+    <string name="combination_error">Combination cannot be used!</string>
+    <string name="turn">Turn</string>
+    <string name="throwNr">Throw</string>
+    <string name="roll_dice_to_start">Roll dice to Start!</string>
+    <string name="roll_dice">Roll Dice</string>
+    <string name="count_score">Count Score</string>
+</resources>

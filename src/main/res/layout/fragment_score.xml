@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="dahe0070.thirty.ScoreActivityFragment"
+    >
+
+
+    <TextView
+        android:id="@+id/tvDiceOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="54dp"
+        android:text="Dice One"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvDiceTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvDiceOne"
+        android:layout_alignStart="@+id/tvDiceOne"
+        android:layout_below="@+id/tvDiceOne"
+        android:layout_marginTop="22dp"
+        android:text="Dice Two" />
+
+    <TextView
+        android:id="@+id/tvDiceThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvDiceTwo"
+        android:layout_alignStart="@+id/tvDiceTwo"
+        android:layout_below="@+id/tvDiceTwo"
+        android:layout_marginTop="22dp"
+        android:text="Dice Three" />
+
+    <TextView
+        android:id="@+id/tvDiceFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tvDiceThree"
+        android:layout_alignStart="@+id/tvDiceThree"
+        android:layout_below="@+id/tvDiceThree"
+        android:layout_marginTop="27dp"
+        android:text="Dice Four" />
+
+    <TextView
+        android:id="@+id/tvDiceFive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tvDiceOne"
+        android:layout_alignRight="@+id/tvDiceOne"
+        android:layout_below="@+id/tvDiceFour"
+        android:layout_marginTop="26dp"
+        android:text="Dice Five" />
+
+    <TextView
+        android:id="@+id/tvDiceSix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dice Six"
+        android:layout_alignBaseline="@+id/txtDie6Out"
+        android:layout_alignBottom="@+id/txtDie6Out"
+        android:layout_alignLeft="@+id/tvDiceFive"
+        android:layout_alignStart="@+id/tvDiceFive" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imgFinalDie1"
+        android:layout_alignLeft="@+id/tvDiceOne"
+        android:layout_alignStart="@+id/tvDiceOne" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Score"
+        android:layout_below="@+id/tvThisCombo"
+        android:layout_alignLeft="@+id/tvThisCombo"
+        android:layout_alignStart="@+id/tvThisCombo"
+        android:layout_marginTop="11dp" />
+
+    <TextView
+        android:id="@+id/txtScoreOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvScore"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_toEndOf="@+id/tvScore"
+        android:layout_toRightOf="@+id/tvScore"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/txtDie1Out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvDiceTwo"
+        android:layout_toEndOf="@+id/tvScore"
+        android:layout_toRightOf="@+id/tvScore"
+        android:text="one" />
+
+    <TextView
+        android:id="@+id/txtDie2Out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDie1Out"
+        android:layout_alignStart="@+id/txtDie1Out"
+        android:layout_alignTop="@+id/tvDiceTwo"
+        android:text="two" />
+
+    <TextView
+        android:id="@+id/txtDie3Out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDie2Out"
+        android:layout_alignStart="@+id/txtDie2Out"
+        android:layout_alignTop="@+id/tvDiceThree"
+        android:text="Three" />
+
+    <TextView
+        android:id="@+id/txtDie4Out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDie3Out"
+        android:layout_alignStart="@+id/txtDie3Out"
+        android:layout_alignTop="@+id/tvDiceFour"
+        android:text="Four" />
+
+    <TextView
+        android:id="@+id/txtDie5Out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDie4Out"
+        android:layout_alignStart="@+id/txtDie4Out"
+        android:layout_alignTop="@+id/tvDiceFive"
+        android:text="Five" />
+
+    <TextView
+        android:id="@+id/txtDie6Out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDie5Out"
+        android:layout_alignStart="@+id/txtDie5Out"
+        android:layout_below="@+id/txtDie5Out"
+        android:layout_marginTop="30dp"
+        android:text="Six" />
+
+    <ImageView
+        android:id="@+id/imgFinalDie1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/die1_small"
+        android:layout_alignBottom="@+id/txtDie1Out"
+        android:layout_toRightOf="@+id/txtScoreOut"
+        android:layout_toEndOf="@+id/txtScoreOut" />
+
+    <ImageView
+        android:id="@+id/imgFinalDie2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/die2_small"
+        android:layout_alignBottom="@+id/txtDie2Out"
+        android:layout_alignRight="@+id/imgFinalDie1"
+        android:layout_alignEnd="@+id/imgFinalDie1" />
+
+    <ImageView
+        android:id="@+id/imgFinalDie3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtDie3Out"
+        android:layout_alignLeft="@+id/imgFinalDie2"
+        android:layout_alignStart="@+id/imgFinalDie2"
+        app:srcCompat="@drawable/die3_small" />
+
+    <ImageView
+        android:id="@+id/imgFinalDie4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtDie4Out"
+        android:layout_alignEnd="@+id/imgFinalDie3"
+        android:layout_alignRight="@+id/imgFinalDie3"
+        app:srcCompat="@drawable/die4_small" />
+
+    <ImageView
+        android:id="@+id/imgFinalDie5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtDie5Out"
+        android:layout_alignLeft="@+id/imgFinalDie4"
+        android:layout_alignStart="@+id/imgFinalDie4"
+        app:srcCompat="@drawable/die5_small" />
+
+    <ImageView
+        android:id="@+id/imgFinalDie6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/txtDie6Out"
+        android:layout_alignLeft="@+id/imgFinalDie5"
+        android:layout_alignStart="@+id/imgFinalDie5"
+        app:srcCompat="@drawable/die6_small" />
+
+    <ImageButton
+        android:id="@+id/btnSummarize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgFinalDie6"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_toEndOf="@+id/imgFinalDie1"
+        android:layout_toRightOf="@+id/imgFinalDie1"
+        android:background="@android:color/transparent"
+        android:tint="@android:color/holo_orange_dark"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <TextView
+        android:id="@+id/tvThisCombo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This combination"
+        android:layout_below="@+id/btnSummarize"
+        android:layout_alignLeft="@+id/tvDiceSix"
+        android:layout_alignStart="@+id/tvDiceSix"
+        android:layout_marginTop="28dp" />
+
+    <TextView
+        android:id="@+id/txtOutCombo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:layout_alignBaseline="@+id/tvThisCombo"
+        android:layout_alignBottom="@+id/tvThisCombo"
+        android:layout_alignLeft="@+id/btnSummarize"
+        android:layout_alignStart="@+id/btnSummarize"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+
+    <Button
+        android:id="@+id/btnFinish"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="19dp"
+        android:layout_toEndOf="@+id/imgFinalDie6"
+        android:layout_toRightOf="@+id/imgFinalDie6"
+        android:backgroundTint="@color/colorAzure"
+        android:text="Finish" />
+
+    <TextView
+        android:id="@+id/txtPlayerNr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnFinish"
+        android:layout_alignLeft="@+id/tvScore"
+        android:layout_alignStart="@+id/tvScore"
+        android:text="TextView"
+        android:textStyle="bold" />
+
+</RelativeLayout>
